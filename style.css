@@ -1,0 +1,117 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f6f7fd;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	gap: 2%; /* Espacio entre los elementos */
+	margin: 5%;
+	height: 100vh; /* Altura total de la ventana */
+}
+
+.facebook-img {
+	width: 60%;
+	height: 60%;
+	margin: 15% 15% -5% -25%;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	margin: 10% 5% 20% 5%;
+}
+
+.logo p {
+	font-size: 150%;
+	margin: 0% 5% 15% 5%;
+}
+  
+.login-form {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	padding: 3%;
+	margin: 10% 10% 15% 15%;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	gap: 10px;
+}
+
+form a {
+	margin: 2%;
+	text-align: center;
+}
+
+hr {
+	width: 95%;
+}
+
+input {
+	padding: 16px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 0.5px solid rgb(211, 211, 211);
+}
+
+button {
+	padding: 15px;
+	background-color: #0866ff;
+	font-weight: bold;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: large;
+	border-style: none;
+	border-color: rgb(54, 54, 54);
+	border-radius: 10px;
+}
+
+.link-crear-pagina {
+	text-align: center;
+	margin: -10% 15% 0% 20%;
+	font-size: 85%;
+}
+
+.link-crear-pagina a {
+	text-decoration: none;
+	color: black;
+}
+
+.btn-crear-cuenta {
+	color: white;
+	background-color: #42b72a;
+	font-size: large;
+	font-weight: bold;
+	padding: 3.5% 1% 3.5% 1%;
+	margin: 0% 20% 0% 20%;
+	border-radius: 7.5px;
+	text-decoration: none;
+}
+
+.link-password {
+	text-decoration: none;
+}
+
+.link-password:hover {
+	text-decoration-line: underline;
+	color: rgb(190, 55, 55);
+}
+
+.link-crear-pagina a:hover {
+	text-decoration-line: underline;
+}
+
+button:hover {
+	background-color: #1e74ff;
+}
+
+.btn-crear-cuenta:hover {
+	background-color: #3aa126;
+}
