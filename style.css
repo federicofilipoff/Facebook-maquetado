@@ -1,81 +1,122 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #f6f7fd;
+	background-color: #f0f0f0;
 }
 
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto auto;
-	gap: 2%; /* Espacio entre los elementos */
+	gap: 1%; /* Espacio entre los elementos */
 	margin: 5%;
 	height: 100vh; /* Altura total de la ventana */
 }
 
-.facebook-img {
+/* ------------------------------------------------------------------------- */
+/* BRANDING */
+.branding {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.branding-logo {
 	width: 60%;
 	height: 60%;
-	margin: 15% 15% -5% -25%;
 }
 
-.logo {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-	margin: 10% 5% 20% 5%;
+.branding-description {
+	font-size: 175%;
+	position: relative;
+	bottom: 25%;
+	left: 5%;
 }
 
-.logo p {
-	font-size: 150%;
-	margin: 0% 5% 15% 5%;
-}
-  
+/* ------------------------------------------------------------------------- */
+/* FORMULARIO */
+
 .login-form {
 	background-color: white;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
+	gap: 12px;
 	padding: 3%;
-	margin: 10% 10% 15% 15%;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
-	gap: 10px;
+	margin: 15%;
 }
 
-form a {
-	margin: 2%;
+.login-form input {
+	font-size: 16px;
+	border: 0.5px solid rgb(211, 211, 211);
+	padding: 16px;
+}
+
+.login-form button {
+	background-color: #0866ff;
+	border-style: none;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.login-form-button:hover {
+	background-color: #297bff;
+}
+
+/* APLICAR PROPIEDAD A TODOS LOS BORDES DEL FORMULARIO */
+.login-form, .login-form > * {
+	border-radius: 7px;
+}
+
+.login-form, .link-crear-pagina {
 	text-align: center;
 }
 
+/* ------------------------------------------------------------------------- */
+/* LINK FORMULARIO */
+.login-form-link {
+	font-size: 85%;
+}
+
+.login-form-link a {
+	text-decoration: none;
+}
+
+.login-form-link a:hover {
+	text-decoration-line: underline;
+	color: rgb(190, 55, 55);
+}
+
+/* ------------------------------------------------------------------------- */
+/* SEPARADOR */
 hr {
-	width: 95%;
+	width: 100%;
+	opacity: 25%;
 }
 
-input {
-	padding: 16px;
-	font-size: 16px;
-	border-radius: 5px;
-	border: 0.5px solid rgb(211, 211, 211);
+/* ------------------------------------------------------------------------- */
+/* LINK CREAR CUENTA */
+.crear-cuenta-link {
+	background-color: #42b72a;
+	padding: 3%;
+	margin: 0% 20%;
 }
 
-button {
-	padding: 15px;
-	background-color: #0866ff;
-	font-weight: bold;
+.crear-cuenta-link:hover {
+	background-color: #3aa126;
+}
+
+/* ------------------------------------------------------------------------- */
+.login-form-button, .crear-cuenta-link a {
 	color: white;
-	border: none;
-	cursor: pointer;
 	font-size: large;
-	border-style: none;
-	border-color: rgb(54, 54, 54);
-	border-radius: 10px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .link-crear-pagina {
-	text-align: center;
-	margin: -10% 15% 0% 20%;
+	position: relative;
+	bottom: 10%;
+	padding: 0% 20%;
 	font-size: 85%;
 }
 
@@ -84,34 +125,6 @@ button {
 	color: black;
 }
 
-.btn-crear-cuenta {
-	color: white;
-	background-color: #42b72a;
-	font-size: large;
-	font-weight: bold;
-	padding: 3.5% 1% 3.5% 1%;
-	margin: 0% 20% 0% 20%;
-	border-radius: 7.5px;
-	text-decoration: none;
-}
-
-.link-password {
-	text-decoration: none;
-}
-
-.link-password:hover {
-	text-decoration-line: underline;
-	color: rgb(190, 55, 55);
-}
-
 .link-crear-pagina a:hover {
 	text-decoration-line: underline;
-}
-
-button:hover {
-	background-color: #1e74ff;
-}
-
-.btn-crear-cuenta:hover {
-	background-color: #3aa126;
 }
